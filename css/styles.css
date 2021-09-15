@@ -49,7 +49,7 @@ body {
 .student-name {
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
-  color: rgb(16, 118, 185);
+  color: rgb(50, 150, 218);
 }
 
 .student-email {
@@ -69,4 +69,43 @@ body {
   font-size: 0.9rem;
   color: rgb(133, 131, 131);
   font-weight: 400;
+}
+
+.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.link-list li {
+  padding: 0.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.link-list button {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  color: rgb(50, 150, 218);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link-list li:hover button,
+button.active {
+  color: #fff;
+  background-color: rgb(50, 150, 218);
+}
+
+@media (max-width: 768px) {
+  .student-list {
+    grid-template-columns: repeat(2, minmax(4rem, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .student-list {
+    grid-template-columns: repeat(1, minmax(4rem, 1fr));
+  }
 }
